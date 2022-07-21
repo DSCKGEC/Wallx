@@ -1,9 +1,9 @@
-# Submission or project name
+# Wallx
 
-[![Contributors](https://img.shields.io/github/contributors/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/project-template)](https://github.com/dsckgec/project-template/pulls)
+[![Contributors](https://img.shields.io/github/contributors/dsckgec/Wallx)](https://github.com/DSCKGEC/Wallx/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/Wallx)](https://github.com/dsckgec/Wallx/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/Wallx)](https://github.com/dsckgec/Wallx/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/Wallx)](https://github.com/dsckgec/Wallx/pulls)
 
 
-A basic GitHub repository template for initializing open source projects on a single click.
+.
 
 ## Contents
 
@@ -53,7 +53,7 @@ See below for our future steps.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+A step-by-step series of examples that tell you how to get a development env running.
 
 
 ## Live demo
@@ -70,8 +70,8 @@ Please read [contributing.md](contributing.md) for details on our code of conduc
 
 ## Authors
 
-<a href="https://github.com/DSCKGEC/project-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DSCKGEC/project-template" />
+<a href="https://github.com/DSCKGEC/Wallx/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DSCKGEC/Wallx" />
 </a>
 
 ## License

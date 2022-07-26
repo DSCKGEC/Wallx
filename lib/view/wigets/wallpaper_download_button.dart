@@ -15,8 +15,7 @@ class DownloadButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () async {
-        await wallpaperController.downloadTheWallpaper(wallpaper.urls.regular);
+      onTap: () {
       },
       child: Container(
         padding: const EdgeInsets.symmetric(

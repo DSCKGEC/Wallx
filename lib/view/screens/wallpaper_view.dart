@@ -5,6 +5,7 @@ import 'package:wallpaperapp/controller/wallpaper_controller.dart';
 import 'package:wallpaperapp/model/wallpaper.dart';
 import 'package:wallpaperapp/view/utils/helpers/colors_helper.dart';
 import 'package:wallpaperapp/view/wigets/wallpaper_download_button.dart';
+import 'package:wallpaperapp/view/wigets/wallpaper_like_button.dart';
 
 import 'package:wallpaperapp/view/wigets/wallpaper_wigets.dart';
 
@@ -55,6 +56,9 @@ class WallpaperView extends StatelessWidget {
                           wallpaperController: controller,
                         ),
                         //add the like button here
+                        LikeButton(
+                            wallpaperController: controller,
+                            wallpaper: wallpaper)
                       ],
                     );
                   },

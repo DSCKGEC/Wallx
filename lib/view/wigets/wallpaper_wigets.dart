@@ -94,16 +94,16 @@ class SetButton extends StatelessWidget {
       },
       child: Container(
         padding: const EdgeInsets.symmetric(
-          vertical: 15,
+          vertical: 13,
           horizontal: 80.0,
         ),
         child: const Text(
           'set as',
-          style: buttons,
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          color: pinkcolor,
+          color: Colors.white,
         ),
       ),
     );

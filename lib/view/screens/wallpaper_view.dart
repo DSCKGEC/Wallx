@@ -4,6 +4,7 @@ import 'package:wallpaperapp/controller/wallpaper_controller.dart';
 
 import 'package:wallpaperapp/model/wallpaper.dart';
 import 'package:wallpaperapp/view/utils/helpers/colors_helper.dart';
+import 'package:wallpaperapp/view/wigets/wallpaper_download_button.dart';
 
 import 'package:wallpaperapp/view/wigets/wallpaper_wigets.dart';
 
@@ -46,6 +47,9 @@ class WallpaperView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         //add the download button here
+                        DownloadButton(
+                            wallpaperController: controller,
+                            wallpaper: wallpaper),
                         SetButton(
                           wallpaper: wallpaper,
                           wallpaperController: controller,

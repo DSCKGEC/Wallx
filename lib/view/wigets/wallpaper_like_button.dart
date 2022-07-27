@@ -2,13 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaperapp/controller/wallpaper_controller.dart';
 import 'package:wallpaperapp/model/wallpaper.dart';
-import 'package:wallpaperapp/view/utils/helpers/colors_helper.dart';
-import 'package:wallpaperapp/view/utils/helpers/style_helper.dart';
 
-class DownloadButton extends StatelessWidget {
+class LikeButton extends StatelessWidget {
   final WallpaperController wallpaperController;
   final Wallpaper wallpaper;
-  const DownloadButton(
+  const LikeButton(
       {Key? key, required this.wallpaperController, required this.wallpaper})
       : super(key: key);
 
@@ -22,8 +20,8 @@ class DownloadButton extends StatelessWidget {
           horizontal: 12.0,
         ),
         child: const Icon(
-          Icons.download,
-          color: Colors.green,
+          Icons.favorite_outline,
+          color: Colors.red,
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100),

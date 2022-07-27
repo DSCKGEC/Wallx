@@ -4,7 +4,6 @@ import 'package:page_transition/page_transition.dart';
 import 'homeview.dart';
 import 'package:lottie/lottie.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -13,14 +12,19 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-      splash: Stack(
-          children: [
-            Center(child: LottieBuilder.asset("assets/lottie/background.json",)),
-            Center(child: Image.asset('assets/logo_wallx.png',height: 240,)),
+      splash: Stack(children: [
+        Center(
+            child: LottieBuilder.asset(
+          "assets/lottie/background.json",
+        )),
+        Center(
+            child: Image.asset(
+          'assets/logo_wallx.png',
+          height: 240,
+        )),
       ]),
       nextScreen: HomeView(),
       splashIconSize: MediaQuery.of(context).size.height,

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:wallpaperapp/view/screens/homeview.dart';
-import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:wallpaperapp/view/screens/splash_screen.dart';
 
 Future<void> main() async {
@@ -22,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(), //write the code to add splash screen here
+      home: const SplashScreen(), //write the code to add splash screen here
     );
   }
 }

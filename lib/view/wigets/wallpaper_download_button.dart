@@ -2,10 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaperapp/controller/wallpaper_controller.dart';
 import 'package:wallpaperapp/model/wallpaper.dart';
-import 'package:wallpaperapp/view/utils/helpers/colors_helper.dart';
-import 'package:wallpaperapp/view/utils/helpers/style_helper.dart';
 
-class DownloadButton extends StatelessWidget {
+class DownloadButton extends StatefulWidget {
   final WallpaperController wallpaperController;
   final Wallpaper wallpaper;
   const DownloadButton(
@@ -13,9 +11,34 @@ class DownloadButton extends StatelessWidget {
       : super(key: key);
 
   @override
+  State<DownloadButton> createState() => _DownloadButtonState();
+}
+
+class _DownloadButtonState extends State<DownloadButton> {
+  showSnackBar(content) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: Colors.green[500],
+        duration: const Duration(seconds: 2),
+        padding: const EdgeInsets.only(left: 120, bottom: 7, top: 7),
+        content: Text(
+          content,
+          style: const TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
+        ),
+      ),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        widget.wallpaperController
+            .downloadTheWallpaper(widget.wallpaper.urls.regular);
+        showSnackBar('wallpaper is downloaded');
+        print(widget.wallpaper.urls.regular);
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(
           vertical: 12,
@@ -32,4 +55,19 @@ class DownloadButton extends StatelessWidget {
       ),
     );
   }
+}
+
+showSnackBar(BuildContext context, content) {
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      backgroundColor: Colors.red[500],
+      duration: const Duration(seconds: 2),
+      padding: const EdgeInsets.only(left: 120, bottom: 7, top: 7),
+      content: Text(
+        content,
+        style: const TextStyle(
+            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
+      ),
+    ),
+  );
 }

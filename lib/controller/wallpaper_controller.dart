@@ -9,11 +9,11 @@ class WallpaperController extends DownloadController {
     var file = await DefaultCacheManager().getSingleFile(url);
     print(file.path);
     await insertImagePath(url: url, path: file.path);
-    Get.showSnackbar(const GetSnackBar(
-      title: 'done',
-      message: 'image download',
-      duration: Duration(seconds: 2),
-    ));
+    // Get.showSnackbar(const GetSnackBar(
+    //   title: 'done',
+    //   message: 'image download',
+    //   duration: Duration(seconds: 2),
+    // ));
   }
 
 //seton

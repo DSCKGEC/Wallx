@@ -166,33 +166,3 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
-
-// Container(
-//                   padding: const EdgeInsets.only(left: 12, top: 17),
-//                   margin: const EdgeInsets.only(top: 15, left: 2),
-//                   width: 305,
-//                   height: 40,
-//                   decoration: BoxDecoration(
-//                       border: Border.all(),
-//                       borderRadius: BorderRadius.circular(20)),
-//                   child: TextField(
-//                       onSubmitted: (value) {
-//                         setState(() {
-//                           searchButtonClicked = false;
-//                         });
-//                       },
-//                       textAlignVertical: TextAlignVertical.center,
-//                       cursorColor: Colors.black38,
-//                       style: const TextStyle(
-//                           fontSize: 17,
-//                           color: Colors.black,
-//                           fontWeight: FontWeight.bold),
-//                       decoration: const InputDecoration(
-//                           border: InputBorder.none,
-//                           focusedBorder: InputBorder.none,
-//                           enabledBorder: InputBorder.none,
-//                           disabledBorder: InputBorder.none,
-//                           hintText: 'Search',
-//                           hintStyle: TextStyle(
-//                             color: Colors.black26,
-//                           )))),
